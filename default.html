@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>A Programmers Quick and Dirty History of the Web</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.2a2" />
+<meta name="author" content="Erich Stehrr" />
+<meta name="company" content="" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- embedded styles -->
+<style type="text/css" media="all">
+.imgcon {width: 525px; margin: 0 auto; padding: 0; text-align: center;}
+#anim {width: 270px; height: 320px; position: relative; margin-top: 0.5em;}
+#anim img {position: absolute; top: 42px; left: 24px;}
+img#me01 {top: 0; left: 0;}
+img#me02 {left: 23px;}
+img#me04 {top: 44px;}
+img#me05 {top: 43px;left: 36px;}
+</style>
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>Erich-Stehr/QDWebHistory</h1>
+<h2>CodeDay &#8226; 2016/11/12</h2>
+</div>
+</div>
+
+<ol class="xoxo presentation">
+
+<li class="slide">
+<h1>A Programmer&#39;s Quick and Dirty History of the Web</h1>
+<h3>Erich Stehr</h3>
+<div class="handout"></div>
+</li>
+
+
+<li class="slide">
+<h1>Who am I? What are we doing here?</h1>
+<ul>
+<li>Professional software developer for 34 years</li>
+<li><p>Web development off and on for 21 years</p></li>
+<li>Goal is <strong>not</strong> to teach you to be web developers in 30 minutes</li>
+<li>Introduction to some of the concepts, sites, and search queries you will need
+to research in order to consider developing a web application.</li>
+<li>Assumptions from my previous CodeDay: you are learning Java, but have not 
+finished the book and have no web development experience.</li>
+</ul>
+</li>
+
+
+<li class="slide">
+<h1>SGML (1969, 1986)</h1>
+<ul>
+<li>At IBM, the Generalized Markup Language was created in 1969, and ISO standardized in 1986</li>
+<li>Creates markup languages, marking up document content elements with tags and attributes</li>
+<li><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p class="greeting"&gt;Hello, World&lt;/p&gt;
+        &lt;img src="http://placehold.it/320x100" /&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre></li>
+</ul>
+</li>
+
+
+<li class="slide">
+<h1>HTML (1993)</h1>
+<ul>
+<li>Tim Berners-Lee at CERN, using SGML to create HyperText Markup Language</li>
+<li>Goal: publishing physics papers over the Internet</li>
+<li>block vs. inline</li>
+<li><code>&lt;form&gt;</code> and <code>&lt;input/&gt;</code> tags: passing data to server</li>
+<li>later: tables
+<table>
+<tr>
+<th>1</th><td>Internet draft</td>
+</tr><tr>
+<th>2.0</th><td>RFC 1866,1867,1942,1980,2070</td>
+</tr><tr>
+<th>3.2</th><td>W3C recommendation</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+
+
+<li class="slide">
+<h1>CSS (1996): content vs. presentation</h1>
+<ul>
+<li>&lt;blink&gt;, &lt;marquee&gt; tags, among others </li>
+<li>selectors: E#id.class</li>
+<li>specificity:<ul>
+    <li>!important</li>
+    <li>inline</li>
+    <li>ID count</li>
+    <li>attribute/class count</li>
+    <li>element count</li>
+</ul></li>
+<li>positioning: flow, <code>float</code>, <code>absolute</code>|<code>relative</code>|<code>fixed</code></li>
+</ul>
+<div class="notes">
+<ul>
+<li>//csszengarden.com (2003) currently 218 examples of what the same HTML and different CSS can look like</li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>W3C drifts off into the (data) weeds</h1>
+<ul>
+<li>XML (1997): 80% of SGML's power with 20% of the complexity</li>
+<li>XHTML (2000): HTML under XML's more restrictive rules</li>
+<li>Semantic Web (or Web of Data)
+    <ul>
+        <li>RDF (Resource Data Framework)</li>
+        <li>OWL (Web Ontology Language)</li>
+        <li>LOD (Linked Open Data)</li>
+    </ul>
+</li>
+</ul>
+<div class="notes">
+<ul>
+<li>https://github.com/JoshData/rdfabout/blob/gh-pages/intro-to-rdf.md</li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>WHAT-WG takes over, HTML5 (2005, 2007)</h1>
+<ul>
+<li>Web Hypertext Application Technology Working Group</li>
+<li>Started with a second version of Forms; W3C refused, then gave in to ultimatum</li>
+<li>Bent in a different direction
+    <ul>
+        <li>No longer SGML based </li>
+        <li>Focus on applications, not documents </li>
+    </ul>
+</li>
+</ul>
+<div class="notes">
+<ul>
+<li> </li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>HTTP </h1>
+<ul>
+<li>HyperText Transfer Protocol
+    <ul>
+        <li>Stateless </li>
+        <li>request/response </li>
+        <li>status codes (200 OK, 404 Not Found)</li>
+    </ul>
+ </li>
+<li>Roy Fielding, REST 
+    <ul>
+        <li>Representational State Transfer </li>
+        <li>Resources (URIs) </li>
+        <li>Verbs
+            <ul>
+                <li>GET </li>
+                <li>PUT, POST </li>
+                <li>DELETE </li>
+                <li>... </li>
+            </ul>
+        </li>
+        <li>Links to next allowable states (Hypertext As The Engine Of Application State; HATEOAS)</li>
+    </ul>
+</li>
+<li>
+</li>
+</ul>
+<div class="notes">
+<ul>
+<li> </li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>JavaScript, ECMAScript (1995, 1997)</h1>
+<ul>
+<li>template-based OO, not class-based </li>
+<li>imperative/functional/scripting </li>
+<li>asynchronous but <em>not</em> concurrent </li>
+<li>XmlHttpRequest object (XHR, 1999), AJAX (2005) </li>
+<li>JavaScript Object Notation (JSON, 2002, RFC 7159) vs. XML</li>
+</ul>
+<div class="notes">
+<ul>
+<li> </li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>Frameworks </h1>
+<ul>
+<li>
+    <ul>
+        <li>jQuery, QUnit </li>
+        <li>Angular vs. Ember vs. Backbone</li>
+        <li>React </li>
+        <li>Bootstrap </li>
+        <li>Bower </li>
+    </ul>
+</li>
+<li>Near-requirements for current web development</li>
+<li>learning curve and frameworks</li>
+</ul>
+<div class="notes">
+<ul>
+<li> </li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>Guidance </h1>
+<ul>
+<li>Data zones and data transfers
+    <ul>
+        <li>Client-side </li>
+        <li>Server-side </li>
+        <li>Transfer up </li>
+        <li>Transfer down </li>
+    </ul>
+</li>
+<li>Pick up jQuery and Angular </li>
+</ul>
+<div class="notes">
+<ul>
+<li> </li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>Use cases </h1>
+<ul>
+<li>Chat (forms, websockets, SignalR/SignalJ/Spring 4) </li>
+<li>Turn-based games (add websockets for less turn based operations) </li>
+<li>Data requests </li>
+<li>Presentations</li>
+</ul>
+<div class="notes">
+<ul>
+<li> </li>
+</ul>
+</div>
+</li>
+
+
+<li class="slide">
+<h1>Conclusion </h1>
+<ul>
+<li>The trinity of HTML, HTTP, and JavaScript </li>
+<li>Polyglot programming </li>
+<li>Use the frameworks, but know what they do </li>
+</ul>
+<div class="notes">
+<ul>
+<li> </li>
+</ul>
+</div>
+</li>
+
+
+</ol>
+
+</body>
+</html>
